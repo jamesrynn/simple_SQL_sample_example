@@ -4,7 +4,6 @@ A sample database with a set of simple query tasks to complete intended to help 
 
 
 ## Initial Setup:
----
 
 Run the initialisation file set_up_database.sql by ... and entering the command
 >>
@@ -15,7 +14,7 @@ Next, look through the example queries in example_queries.sql to see how it join
 
 
 ## Query Tasks:
----
+
 The following questions may be answered by writing queries to the database.
 
 ### Part 1:
@@ -35,4 +34,4 @@ Again without looking at the initialisation file, can you build a model to deter
 
 
 ### Acknowledgements
-Thanks to Pul Russell (https://github.com/pt-russell) for the initialisation code, questions and general advice.
+Thanks to [Paul Russell](https://github.com/pt-russell "Paul Russell Github") for the initialisation code, questions and general advice.
