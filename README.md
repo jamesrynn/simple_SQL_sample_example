@@ -1,6 +1,6 @@
 # Simple SQL Sample Example
 
-A sample database with a set of simple query tasks to complete intended to help learn SQL from scratch. Includes database initialisation file (set_up_datbase.sql) and a set of example queries (example_queries.sql).
+A sample database with a set of simple query tasks to complete intended to help learn SQL from scratch. Includes database initialisation file (set_up_datbase.sql) and a set of example queries (example_queries.sql). Database is designed to mimic the typical form of data that would be encountered in the financial department of a business.
 
 
 ## Initial Setup:
@@ -23,7 +23,7 @@ Write queries to the database to answer the following questions:
 2. What is the average balance by ProductType?
 3. What is the average balance today (discount previous collections from purchase value) of all customers whose surname begins with a G?
 
-### Part 2:
+### Part 2:
 Without looking at the set up file, answer the following questions:
 
 4. Which portfolio are people most likely to pay in?
