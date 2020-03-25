@@ -22,13 +22,14 @@ Write queries to the database to answer the following questions:
 1. What is the average balance in each portfolio?
 2. What is the average balance by ProductType?
 3. What is the average balance today (discount previous collections from purchase value) of all customers whose surname begins with a G?
+4. Which customer has the highest number of accounts?
 
 ### Part 2:
 Without looking at the set up file, answer the following questions:
 
-4. Which portfolio are people most likely to pay in?
-5. Which product type are people most likely to pay in?
-6. What is the pay rate over the last 12 months? That is, the number of customers who have paid in the last 12 months divided by the number of customers who had not cleared their balance in the last 12 months.
+5. Which portfolio are people most likely to pay in?
+6. Which product type are people most likely to pay in?
+7. What is the pay rate over the last 12 months? That is, the number of customers who have paid in the last 12 months divided by the number of customers who had not cleared their balance in the last 12 months.
 
 ### Part 3 (Extra):
 Again without looking at the initialisation file, can you build a model to determine the expected collections of an AccountId based on the information in the database.
