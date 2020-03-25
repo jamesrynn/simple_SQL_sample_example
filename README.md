@@ -5,10 +5,7 @@ A sample database with a set of simple query tasks to complete intended to help 
 
 ## Initial Setup:
 
-Run the initialisation file set_up_database.sql by ... and entering the command
->>
-This will build and populate a database of people and their personal details including name, D.O.B, bank etc.
-Don't worry about the code in this file too much, but you can read it if you feel like it.
+Run the initialisation file set_up_database.sql. If you need help, there is a useful guide to setting up SQL avaliable [here](LINK "Guide to setting up SQL"). This will build and populate a database of people and their personal details including name, D.O.B, bank etc. Don't worry about the code in this file too much, but you can read it if you feel like it.
 
 Next, look through the example queries in example_queries.sql to see how it joins together.
 
