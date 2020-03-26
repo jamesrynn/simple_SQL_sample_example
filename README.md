@@ -5,7 +5,7 @@ A sample database with a set of simple query tasks to complete intended to help 
 
 ## Initial Setup:
 
-Run the initialisation file set_up_database.sql. If you need help, there is a useful guide to setting up SQL avaliable [here](LINK "Guide to setting up SQL"). This will build and populate a database of people and their personal details including name, D.O.B, bank etc. Don't worry about the code in this file too much, but you can read it if you feel like it.
+Run the initialisation file set_up_database.sql. If you need help, there is a useful guide to setting up SQL avaliable [here](https://docs.microsoft.com/en-us/sql/database-engine/install-windows/install-sql-server?view=sql-server-ver15 "Guide to setting up SQL")<sup>1</sup>. This will build and populate a database of people and their personal details including name, D.O.B, bank etc. Don't worry about the code in this file too much, but you can read it if you feel like it.
 
 Next, look through the example queries in example_queries.sql to see how it joins together.
 
@@ -34,3 +34,6 @@ Again without looking at the initialisation file, can you build a model to deter
 
 ### Acknowledgements
 Thanks to [Paul Russell](https://github.com/pt-russell "Paul Russell Github") for providing the initialisation code, questions and general advice.
+
+
+1. Written for Windows machines but contains links to guides for other operating systems.
