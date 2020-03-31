@@ -1,8 +1,16 @@
--- Number of accounts
+-- Number of accounts.
 SELECT	count(*)
 FROM	master.dbo.Account
 
--- Number of accounts for each customer, and amounts owed
+
+-- Number of people that have a purchase balance which rounds down to either 0,10,...90.
+SELECT floor(A.PurchaseBalance/10)*10, count(*)
+FROM master.dbo.Account as A
+WHERE A.PurchaseBalance < 100
+GROUP BY floor(A.PurchaseBalance/10)*10
+
+
+-- Number of accounts for each customer, and amounts owed.
 SELECT	C.CustomerId,
 		C.FirstName,
 		C.LastName,
@@ -15,7 +23,8 @@ GROUP BY C.CustomerId,
 		C.FirstName,
 		C.LastName
 
--- Get portfolio composition by Product type
+		
+-- Get portfolio composition by Product type.
 SELECT	P.PortfolioName,
 		zP.ProductName,
 		COUNT(*)
@@ -27,7 +36,8 @@ GROUP BY P.PortfolioName,
 ORDER BY 1,
 		2
 
--- Get Customer's collections
+		
+-- Get Customer's collections.
 SELECT	C.FirstName,
 		C.LastName,
 		A.AccountId,
@@ -42,7 +52,8 @@ GROUP BY C.FirstName,
 		A.AccountId,
 		A.PurchaseBalance
 
--- How Many open accounts does each customer have
+		
+-- How Many open accounts does each customer have.
 SELECT	C.FirstName,
 		C.LastName,
 		SUM(CASE WHEN t.Status = 1 then 1 else 0 end) N_Closed,
@@ -64,6 +75,7 @@ FROM	(
 GROUP BY C.FirstName,
 		C.LastName
 
+		
 -- Have any Customers settled all accounts?
 SELECT	C.FirstName,
 		C.LastName,
