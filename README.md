@@ -19,7 +19,7 @@ The following questions may be answered by writing queries to the database. Try 
 
 1. What is the average balance in each portfolio?
 2. What is the average balance by ProductType?
-3. What is the average balance today (discount previous collections from purchase value) of all customers whose surname begins with a G?
+3. What is the average balance today (*hint:* discount previous collections from purchase value) of all customers whose surname begins with a G?
 4. Which customer has the highest number of accounts?
 
 ### Part 2:
