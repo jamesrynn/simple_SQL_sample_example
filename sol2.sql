@@ -1,35 +1,21 @@
 /*
-Solutions to Part 1 of the Query Tasks.
+Solutions to Part 2 of the Query Tasks.
 */
 
 
--- Q1: What is the average balance in each portfolio?
-SELECT 		P.PortfolioName, AVG(A.PurchaseBalance) 
-FROM 		Account AS A
-			INNER JOIN 	Portfolio as P ON P.PortfolioId = A.PortfolioId 
-GROUP BY 	P.PortfolioName
-ORDER BY 	P.PortfolioName
+-- Q5: Which portfolio are people most likely to pay into?
 
 
 
--- Q2: What is the average balance by Product Type?
-SELECT A.ProductType, AVG(A.PurchaseBalance) 
-FROM Account AS A
-GROUP BY A.ProductType 
-ORDER BY A.ProductType
+
+-- Q6: Which product type are people most likely to pay into?
 
 
 
--- Q3: What is the average balance today (hint: discount previous collections from purchase value) of all customers whose surname begins with a G?
-SELECT DISTINCT 	Cu.LastName, Cu.FirstName, AVG(A.PurchaseBalance - Co.TransactionAmount)
-FROM 				Account as A
-					INNER JOIN Collections 		AS Co ON Co.AccountId = A.AccountId
-					INNER JOIN AccountCustomer 	AS AC ON AC.AccountId = A.AccountId
-					INNER JOIN Customer 		AS Cu ON Cu.CustomerId = AC.CustomerId
-WHERE 				SUBSTRING(Cu.LastName,1,1)='G'
-GROUP BY 			Cu.LastName, Cu.FirstName
-ORDER BY 			Cu.LastName, Cu.FirstName
-
+/*
+Q7: What is the pay rate over the last 12 months? That is the number of customers who have paid in the last 12 months divided by the number of customers who 
+had not cleared their balance in the last 12 months.
+*/
 
 
 -- Q4: Which customer has the highest number of accounts?
